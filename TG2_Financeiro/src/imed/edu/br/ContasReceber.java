@@ -1,3 +1,9 @@
+//--------------------
+//----- v. 0.0.1 -----
+//--------------------
+//Atualizado por : Marcelo
+//Data : 10/11/2019 - 15:30
+
 package imed.edu.br;
 
 public class ContasReceber {
