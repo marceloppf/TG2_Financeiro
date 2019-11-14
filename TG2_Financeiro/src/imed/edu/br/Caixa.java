@@ -1,57 +1,69 @@
 //--------------------
-//----- v. 0.0.1 -----
+//----- v. 0.0.2 -----
 //--------------------
 //Atualizado por : Marcelo
-//Data : 13/11/2019 - 18:40
+//Data : 13/11/2019 - 22:16
 
 package imed.edu.br;
 
 public class Caixa {
+
 	Integer Id_Doc;
-	String  Dt_Vcto; 
-	Integer Num_Parcela;
-	String  Dt_Receb;
-	Double 	Vlr_Receb;
-	Integer Status_CR;
-	
-	
-	
-	
+	PlanoContas Id_Conta;
+	Pessoas Id_Pessoa;
+	Integer Tp_Doc;
+	String Dt_Doc;
+	Double Vlr_Doc;
+	Integer Parcela;
+	Integer Status_Doc;
 	public Integer getId_Doc() {
 		return Id_Doc;
 	}
 	public void setId_Doc(Integer id_Doc) {
 		Id_Doc = id_Doc;
 	}
-	public String getDt_Vcto() {
-		return Dt_Vcto;
+	public PlanoContas getId_Conta() {
+		return Id_Conta;
 	}
-	public void setDt_Vcto(String dt_Vcto) {
-		Dt_Vcto = dt_Vcto;
+	public void setId_Conta(PlanoContas id_Conta) {
+		Id_Conta = id_Conta;
 	}
-	public Integer getNum_Parcela() {
-		return Num_Parcela;
+	public Pessoas getId_Pessoa() {
+		return Id_Pessoa;
 	}
-	public void setNum_Parcela(Integer num_Parcela) {
-		Num_Parcela = num_Parcela;
+	public void setId_Pessoa(Pessoas id_Pessoa) {
+		Id_Pessoa = id_Pessoa;
 	}
-	public String getDt_Receb() {
-		return Dt_Receb;
+	public Integer getTp_Doc() {
+		return Tp_Doc;
 	}
-	public void setDt_Receb(String dt_Receb) {
-		Dt_Receb = dt_Receb;
+	public void setTp_Doc(Integer tp_Doc) {
+		Tp_Doc = tp_Doc;
 	}
-	public Double getVlr_Receb() {
-		return Vlr_Receb;
+	public String getDt_Doc() {
+		return Dt_Doc;
 	}
-	public void setVlr_Receb(Double vlr_Receb) {
-		Vlr_Receb = vlr_Receb;
+	public void setDt_Doc(String dt_Doc) {
+		Dt_Doc = dt_Doc;
 	}
-	public Integer getStatus_CR() {
-		return Status_CR;
+	public Double getVlr_Doc() {
+		return Vlr_Doc;
 	}
-	public void setStatus_CR(Integer status_CR) {
-		Status_CR = status_CR;
-	}	
+	public void setVlr_Doc(Double vlr_Doc) {
+		Vlr_Doc = vlr_Doc;
+	}
+	public Integer getParcela() {
+		return Parcela;
+	}
+	public void setParcela(Integer parcela) {
+		Parcela = parcela;
+	}
+	public Integer getStatus_Doc() {
+		return Status_Doc;
+	}
+	public void setStatus_Doc(Integer status_Doc) {
+		Status_Doc = status_Doc;
+	}
 
+	
 }
