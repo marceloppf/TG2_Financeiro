@@ -2,62 +2,59 @@ package imed.edu.br;
 
 public class Pessoas {
 
-	private Integer Id_Pessoa;
-	private String Nome;
-	private String Endereco;
-	private String Cidade;
-	private String CEP;
-	private Integer Tp_Pessoa;
+	private Integer idPessoa;
+	private String nome;
+	private String endereco;
+	private String cidade;
+	private String cep;
+	private Integer tpPessoa;
 
-	public Integer getId_Pessoa() {
-		return Id_Pessoa;
+	public Integer getIdPessoa() {
+		return idPessoa;
 	}
 
-	public void setId_Pessoa(Integer id_Pessoa) {
-		Id_Pessoa = id_Pessoa;
+	public void setIdPessoa(Integer idPessoa) {
+		this.idPessoa = idPessoa;
 	}
 
 	public String getNome() {
-		return Nome;
+		return nome;
 	}
 
 	public void setNome(String nome) {
-		Nome = nome;
+		this.nome = nome;
 	}
 
 	public String getEndereco() {
-		return Endereco;
+		return endereco;
 	}
 
 	public void setEndereco(String endereco) {
-		Endereco = endereco;
+		this.endereco = endereco;
 	}
 
 	public String getCidade() {
-		return Cidade;
+		return cidade;
 	}
 
 	public void setCidade(String cidade) {
-		Cidade = cidade;
+		this.cidade = cidade;
 	}
 
-	public String getCEP() {
-		return CEP;
+	public String getCep() {
+		return cep;
 	}
 
-	public void setCEP(String cEP) {
-		CEP = cEP;
+	public void setCep(String cep) {
+		this.cep = cep;
 	}
 
-	public String getTp_Pessoa() {
-		if (this.Tp_Pessoa == 1) {
-			return "Física";
-		} else {
-			return "Juridica";
-		}
+	public Integer getTpPessoa() {
+		return tpPessoa;
 	}
 
-	public void setTp_Pessoa(Integer tp_Pessoa) {
-		Tp_Pessoa = tp_Pessoa;
+	public void setTpPessoa(Integer tpPessoa) {
+		this.tpPessoa = tpPessoa;
 	}
+
 }

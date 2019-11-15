@@ -2,77 +2,77 @@ package imed.edu.br;
 
 public class Caixa {
 
-	Integer Id_Doc;
-	PlanoContas Id_Conta;
-	Pessoas Id_Pessoa;
-	Integer Tp_Doc;
-	String Dt_Doc;
-	Double Vlr_Doc;
-	Integer Parcela;
-	Integer Status_Doc;
+	Integer idDoc;
+	PlanoContas idConta;
+	Pessoas idPessoa;
+	Integer tipoDoc;
+	String dataDoc;
+	Double valorDoc;
+	Integer parcela;
+	Integer statusDoc;
 
-	public Integer getId_Doc() {
-		return Id_Doc;
+	public Integer getIdDoc() {
+		return idDoc;
 	}
 
-	public void setId_Doc(Integer id_Doc) {
-		Id_Doc = id_Doc;
+	public void setIdDoc(Integer idDoc) {
+		this.idDoc = idDoc;
 	}
 
-	public PlanoContas getId_Conta() {
-		return Id_Conta;
+	public PlanoContas getIdConta() {
+		return idConta;
 	}
 
-	public void setId_Conta(PlanoContas id_Conta) {
-		Id_Conta = id_Conta;
+	public void setIdConta(PlanoContas idConta) {
+		this.idConta = idConta;
 	}
 
-	public Pessoas getId_Pessoa() {
-		return Id_Pessoa;
+	public Pessoas getIdPessoa() {
+		return idPessoa;
 	}
 
-	public void setId_Pessoa(Pessoas id_Pessoa) {
-		Id_Pessoa = id_Pessoa;
+	public void setIdPessoa(Pessoas idPessoa) {
+		this.idPessoa = idPessoa;
 	}
 
-	public Integer getTp_Doc() {
-		return Tp_Doc;
+	public Integer getTipoDoc() {
+		return tipoDoc;
 	}
 
-	public void setTp_Doc(Integer tp_Doc) {
-		Tp_Doc = tp_Doc;
+	public void setTipoDoc(Integer tipoDoc) {
+		this.tipoDoc = tipoDoc;
 	}
 
-	public String getDt_Doc() {
-		return Dt_Doc;
+	public String getDataDoc() {
+		return dataDoc;
 	}
 
-	public void setDt_Doc(String dt_Doc) {
-		Dt_Doc = dt_Doc;
+	public void setDataDoc(String dataDoc) {
+		this.dataDoc = dataDoc;
 	}
 
-	public Double getVlr_Doc() {
-		return Vlr_Doc;
+	public Double getValorDoc() {
+		return valorDoc;
 	}
 
-	public void setVlr_Doc(Double vlr_Doc) {
-		Vlr_Doc = vlr_Doc;
+	public void setValorDoc(Double valorDoc) {
+		this.valorDoc = valorDoc;
 	}
 
 	public Integer getParcela() {
-		return Parcela;
+		return parcela;
 	}
 
 	public void setParcela(Integer parcela) {
-		Parcela = parcela;
+		this.parcela = parcela;
 	}
 
-	public Integer getStatus_Doc() {
-		return Status_Doc;
+	public Integer getStatusDoc() {
+		return statusDoc;
 	}
 
-	public void setStatus_Doc(Integer status_Doc) {
-		Status_Doc = status_Doc;
+	public void setStatusDoc(Integer statusDoc) {
+		this.statusDoc = statusDoc;
 	}
 
 }

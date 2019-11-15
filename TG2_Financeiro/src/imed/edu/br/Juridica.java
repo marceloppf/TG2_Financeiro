@@ -2,33 +2,32 @@ package imed.edu.br;
 
 public class Juridica extends Pessoas {
 
-	Pessoas Id_Pessoa;
-	private String CNPJ;
-	private String Inscricao;
-	private String Dt_Fundacao;
+	private String cnpj;
+	private String inscricao;
+	private String dtaFundacao;
 
-	public String getCNPJ() {
-		return CNPJ;
+	public String getCnpj() {
+		return cnpj;
 	}
 
-	public void setCNPJ(String cNPJ) {
-		CNPJ = cNPJ;
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
 	}
 
 	public String getInscricao() {
-		return Inscricao;
+		return inscricao;
 	}
 
 	public void setInscricao(String inscricao) {
-		Inscricao = inscricao;
+		this.inscricao = inscricao;
 	}
 
-	public String getDt_Fundacao() {
-		return Dt_Fundacao;
+	public String getDtaFundacao() {
+		return dtaFundacao;
 	}
 
-	public void setDt_Fundacao(String dt_Fundacao) {
-		Dt_Fundacao = dt_Fundacao;
+	public void setDtaFundacao(String dtaFundacao) {
+		this.dtaFundacao = dtaFundacao;
 	}
 
 }

@@ -1,41 +1,41 @@
 package imed.edu.br;
 
 public class ContasPagar {
-	Caixa Id_Doc;
-	String Dt_PG;
-	Double Vlr_PG;
-	String Status_CP;
+	Caixa idDoc;
+	String dataPagamento;
+	Double valorPagamento;
+	String statusCp;
 
-	public Caixa getId_Doc() {
-		return Id_Doc;
+	public Caixa getIdDoc() {
+		return idDoc;
 	}
 
-	public void setId_Doc(Caixa id_Doc) {
-		Id_Doc = id_Doc;
+	public void setIdDoc(Caixa idDoc) {
+		this.idDoc = idDoc;
 	}
 
-	public String getDt_PG() {
-		return Dt_PG;
+	public String getDataPagamento() {
+		return dataPagamento;
 	}
 
-	public void setDt_PG(String dt_PG) {
-		Dt_PG = dt_PG;
+	public void setDataPagamento(String dataPagamento) {
+		this.dataPagamento = dataPagamento;
 	}
 
-	public Double getVlr_PG() {
-		return Vlr_PG;
+	public Double getValorPagamento() {
+		return valorPagamento;
 	}
 
-	public void setVlr_PG(Double vlr_PG) {
-		Vlr_PG = vlr_PG;
+	public void setValorPagamento(Double valorPagamento) {
+		this.valorPagamento = valorPagamento;
 	}
 
-	public String getStatus_CP() {
-		return Status_CP;
+	public String getStatusCp() {
+		return statusCp;
 	}
 
-	public void setStatus_CP(String status_CP) {
-		Status_CP = status_CP;
+	public void setStatusCp(String statusCp) {
+		this.statusCp = statusCp;
 	}
 
 }

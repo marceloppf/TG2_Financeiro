@@ -2,32 +2,41 @@ package imed.edu.br;
 
 public class Fisica extends Pessoas {
 
-	Integer Id_Pessoa;
-	private String CPF;
-	private String CI;
-	private String Dt_Nasct;
+	Integer idPessoa;
+	private String cpf;
+	private String rg;
+	private String dtNasc;
 
-	public String getCPF() {
-		return CPF;
+	public Integer getIdPessoa() {
+		return idPessoa;
 	}
 
-	public void setCPF(String cPF) {
-		CPF = cPF;
+	public void setIdPessoa(Integer idPessoa) {
+		this.idPessoa = idPessoa;
 	}
 
-	public String getCI() {
-		return CI;
+	public String getCpf() {
+		return cpf;
 	}
 
-	public void setCI(String cI) {
-		CI = cI;
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
 	}
 
-	public String getDt_Nasct() {
-		return Dt_Nasct;
+	public String getRg() {
+		return rg;
 	}
 
-	public void setDt_Nasct(String dt_Nasct) {
-		Dt_Nasct = dt_Nasct;
+	public void setRg(String rg) {
+		this.rg = rg;
 	}
+
+	public String getDtNasc() {
+		return dtNasc;
+	}
+
+	public void setDtNasc(String dtNasc) {
+		this.dtNasc = dtNasc;
+	}
+
 }

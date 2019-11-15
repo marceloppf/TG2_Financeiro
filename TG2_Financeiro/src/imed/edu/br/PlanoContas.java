@@ -1,35 +1,32 @@
 package imed.edu.br;
 
 public class PlanoContas {
-	private String Id_Conta;
-	private String Nome_Conta;
-	private Integer Tipo_Conta;
+	private String idConta;
+	private String nomeConta;
+	private Integer tipoConta;
 
-	public String getId_Conta() {
-		return Id_Conta;
+	public String getIdConta() {
+		return idConta;
 	}
 
-	public void setId_Conta(String id_Conta) {
-		Id_Conta = id_Conta;
+	public void setIdConta(String idConta) {
+		this.idConta = idConta;
 	}
 
-	public String getNome_Conta() {
-		return Nome_Conta;
+	public String getNomeConta() {
+		return nomeConta;
 	}
 
-	public void setNome_Conta(String nome_Conta) {
-		Nome_Conta = nome_Conta;
+	public void setNomeConta(String nomeConta) {
+		this.nomeConta = nomeConta;
 	}
 
-	public String getTipo_Conta() {
-		if (this.Tipo_Conta == 1) {
-			return "CP";
-		} else {
-			return "CR";
-		}
+	public Integer getTipoConta() {
+		return tipoConta;
 	}
 
-	public void setTipo_Conta(Integer tipo_Conta) {
-		Tipo_Conta = tipo_Conta;
+	public void setTipoConta(Integer tipoConta) {
+		this.tipoConta = tipoConta;
 	}
+
 }
