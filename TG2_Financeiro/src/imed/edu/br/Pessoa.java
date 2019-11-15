@@ -1,6 +1,6 @@
 package imed.edu.br;
 
-public class Pessoas {
+public class Pessoa {
 
 	private Integer idPessoa;
 	private String nome;
@@ -8,6 +8,11 @@ public class Pessoas {
 	private String cidade;
 	private String cep;
 	private Integer tpPessoa;
+	private Conta conta;
+	
+	public Pessoa() {
+		setConta(new Conta());
+	}
 
 	public Integer getIdPessoa() {
 		return idPessoa;
@@ -55,6 +60,14 @@ public class Pessoas {
 
 	public void setTpPessoa(Integer tpPessoa) {
 		this.tpPessoa = tpPessoa;
+	}
+
+	public Conta getConta() {
+		return conta;
+	}
+
+	public void setConta(Conta conta) {
+		this.conta = conta;
 	}
 
 }

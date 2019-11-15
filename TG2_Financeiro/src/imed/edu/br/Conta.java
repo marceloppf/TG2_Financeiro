@@ -1,6 +1,6 @@
 package imed.edu.br;
 
-public class PlanoContas {
+public class Conta {
 	private String idConta;
 	private String nomeConta;
 	private Integer tipoConta;

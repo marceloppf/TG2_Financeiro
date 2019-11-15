@@ -1,10 +1,14 @@
 package imed.edu.br;
 
-public class Juridica extends Pessoas {
+public class Juridica extends Pessoa {
 
 	private String cnpj;
 	private String inscricao;
 	private String dtaFundacao;
+	
+	public Juridica() {
+		setTpPessoa(1);
+	}
 
 	public String getCnpj() {
 		return cnpj;

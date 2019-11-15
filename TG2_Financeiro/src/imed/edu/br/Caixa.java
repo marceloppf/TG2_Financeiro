@@ -3,8 +3,8 @@ package imed.edu.br;
 public class Caixa {
 
 	Integer idDoc;
-	PlanoContas idConta;
-	Pessoas idPessoa;
+	Conta idConta;
+	Pessoa idPessoa;
 	Integer tipoDoc;
 	String dataDoc;
 	Double valorDoc;
@@ -19,19 +19,19 @@ public class Caixa {
 		this.idDoc = idDoc;
 	}
 
-	public PlanoContas getIdConta() {
+	public Conta getIdConta() {
 		return idConta;
 	}
 
-	public void setIdConta(PlanoContas idConta) {
+	public void setIdConta(Conta idConta) {
 		this.idConta = idConta;
 	}
 
-	public Pessoas getIdPessoa() {
+	public Pessoa getIdPessoa() {
 		return idPessoa;
 	}
 
-	public void setIdPessoa(Pessoas idPessoa) {
+	public void setIdPessoa(Pessoa idPessoa) {
 		this.idPessoa = idPessoa;
 	}
 

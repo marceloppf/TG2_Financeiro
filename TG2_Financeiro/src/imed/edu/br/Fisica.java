@@ -1,18 +1,13 @@
 package imed.edu.br;
 
-public class Fisica extends Pessoas {
+public class Fisica extends Pessoa {
 
-	Integer idPessoa;
 	private String cpf;
 	private String rg;
 	private String dtNasc;
-
-	public Integer getIdPessoa() {
-		return idPessoa;
-	}
-
-	public void setIdPessoa(Integer idPessoa) {
-		this.idPessoa = idPessoa;
+	
+	public Fisica() {
+		setTpPessoa(0);
 	}
 
 	public String getCpf() {
