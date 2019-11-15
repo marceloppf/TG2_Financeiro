@@ -1,9 +1,3 @@
-//--------------------
-//----- v. 0.0.2 -----
-//--------------------
-//Atualizado por : Marcelo
-//Data : 13/11/2019 - 22:16
-
 package imed.edu.br;
 
 public class Caixa {
@@ -16,6 +10,8 @@ public class Caixa {
 	Double Vlr_Doc;
 	Integer Parcela;
 	Integer Status_Doc;
+	
+	
 	public Integer getId_Doc() {
 		return Id_Doc;
 	}
