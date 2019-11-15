@@ -7,7 +7,6 @@ public class SistemaFinanceiro {
 		PlanoContas pconta1 = new PlanoContas();
 		PlanoContas pconta2 = new PlanoContas();		
 		
-		// teste
 		Fisica   pessF1 = new Fisica();
 		Juridica pessJ1 = new Juridica();
 				
