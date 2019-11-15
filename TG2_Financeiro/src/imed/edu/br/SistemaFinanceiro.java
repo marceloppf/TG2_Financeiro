@@ -9,8 +9,7 @@ public class SistemaFinanceiro {
 		
 		Fisica   pessF1 = new Fisica();
 		Juridica pessJ1 = new Juridica();
-		
-		//---------------------------------------
+				
 		pconta1.setId_Conta("1.1.001");
 		pconta1.setNome_Conta("Vendas para Clientes");
 		pconta1.setTipo_Conta(1); //Contas a Receber
