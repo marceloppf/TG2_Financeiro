@@ -39,9 +39,9 @@ public class SistemaFinanceiro {
 		System.out.println("Tipo Conta "+pconta2.getTipo_Conta()+") : "+pconta2.getId_Conta()+" - "+pconta2.getNome_Conta());		
 		
 		System.out.println("Pessoa "+pessF1.getTp_Pessoa()+" : "+pessF1.getNome()+" - "+pessF1.getCidade()+" - CPF: "+pessF1.getCPF());
-		System.out.println("Pessoa "+pessJ1.getTp_Pessoa()+" : "+pessJ1.getNome()+" - "+pessJ1.getCidade()+" - CNPJ: "+pessJ1.getCNPJ());
+		System.out.println("Pessoa " + pessJ1.getTp_Pessoa() + " : " + pessJ1.getNome() + " - " + pessJ1.getCidade()
+				+ " - CNPJ: " + pessJ1.getCNPJ());
 
-		
 	}
 
 }
