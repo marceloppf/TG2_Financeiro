@@ -1,6 +1,5 @@
 package imed.edu.br;
 
-import java.sql.Timestamp;
 import java.time.Instant;
 
 public class ContasPagar {
