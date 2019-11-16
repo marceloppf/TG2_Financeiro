@@ -7,6 +7,13 @@ public class Fisica extends Pessoa {
 	private String dtNasc;
 	
 	public Fisica() {
+		setNome("Pedro Saraiva");
+		setEndereco("Avenida Brasil 666");
+		setCidade("Passo Fundo");
+		setCep("99010000");
+		setDtNasc("07/07/1990");
+		setRg("98765432112");
+		setCpf("12345678");
 		setTpPessoa(0);
 	}
 

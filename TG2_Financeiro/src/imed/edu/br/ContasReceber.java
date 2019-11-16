@@ -1,23 +1,15 @@
-//--------------------
-//----- v. 0.0.1 -----
-//--------------------
-//Atualizado por : Marcelo
-//Data : 10/11/2019 - 15:30
-
 package imed.edu.br;
 
 public class ContasReceber {
-	Caixa idDoc;
+	ContasPagar contaPagar;
 	String dataReceb;
-	Double valorReceb;
+	Double valorPagamento;
 	String statusCr;
 
-	public Caixa getIdDoc() {
-		return idDoc;
-	}
-
-	public void setIdDoc(Caixa idDoc) {
-		this.idDoc = idDoc;
+	public ContasReceber(ContasPagar contaPagar) {
+		this.contaPagar = contaPagar;
+		this.valorPagamento = contaPagar.getValorConta();
+		setStatusCr("Pago");
 	}
 
 	public String getDataReceb() {
@@ -28,12 +20,12 @@ public class ContasReceber {
 		this.dataReceb = dataReceb;
 	}
 
-	public Double getValorReceb() {
-		return valorReceb;
+	public Double getValorPagamento() {
+		return valorPagamento;
 	}
 
-	public void setValorReceb(Double valorReceb) {
-		this.valorReceb = valorReceb;
+	public void setValorPagamento(Double valorReceb) {
+		this.valorPagamento = valorReceb;
 	}
 
 	public String getStatusCr() {
@@ -42,6 +34,11 @@ public class ContasReceber {
 
 	public void setStatusCr(String statusCr) {
 		this.statusCr = statusCr;
+	}
+
+	@Override
+	public String toString() {
+		return "ContasReceber [dataReceb=" + dataReceb + ", valorReceb=" + valorPagamento + ", statusCr=" + statusCr + "]";
 	}
 
 }

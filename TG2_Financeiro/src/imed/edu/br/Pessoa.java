@@ -2,7 +2,6 @@ package imed.edu.br;
 
 public class Pessoa {
 
-	private Integer idPessoa;
 	private String nome;
 	private String endereco;
 	private String cidade;
@@ -12,14 +11,6 @@ public class Pessoa {
 	
 	public Pessoa() {
 		setConta(new Conta());
-	}
-
-	public Integer getIdPessoa() {
-		return idPessoa;
-	}
-
-	public void setIdPessoa(Integer idPessoa) {
-		this.idPessoa = idPessoa;
 	}
 
 	public String getNome() {

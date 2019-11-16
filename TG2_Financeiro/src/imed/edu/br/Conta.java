@@ -1,32 +1,40 @@
 package imed.edu.br;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Conta {
 	private String idConta;
-	private String nomeConta;
-	private Integer tipoConta;
+	private List<ContasPagar> contasPagar = new ArrayList<>();
+	private List<ContasReceber> contasReceber = new ArrayList<>();
 
+	public Conta() {
+		idConta = Double.toString(Math.random() * 1000);
+	}
+	
 	public String getIdConta() {
 		return idConta;
 	}
 
-	public void setIdConta(String idConta) {
-		this.idConta = idConta;
+	public List<ContasPagar> getContasPagar() {
+		return contasPagar;
 	}
 
-	public String getNomeConta() {
-		return nomeConta;
+	public void setContasPagar(List<ContasPagar> contasPagar) {
+		this.contasPagar = contasPagar;
 	}
 
-	public void setNomeConta(String nomeConta) {
-		this.nomeConta = nomeConta;
+	public List<ContasReceber> getContasReceber() {
+		return contasReceber;
 	}
 
-	public Integer getTipoConta() {
-		return tipoConta;
+	public void setContasReceber(List<ContasReceber> contasReceber) {
+		this.contasReceber = contasReceber;
 	}
 
-	public void setTipoConta(Integer tipoConta) {
-		this.tipoConta = tipoConta;
+	@Override
+	public String toString() {
+		return "Conta [idConta=" + idConta + ", contasPagar=" + contasPagar + ", contasReceber=" + contasReceber + "]";
 	}
 
 }

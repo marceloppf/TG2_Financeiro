@@ -1,19 +1,21 @@
 package imed.edu.br;
 
+import java.sql.Timestamp;
+import java.time.Instant;
+
 public class ContasPagar {
-	Caixa idDoc;
+	String id;
 	String dataPagamento;
-	Double valorPagamento;
+	Double valorConta;
 	String statusCp;
 
-	public Caixa getIdDoc() {
-		return idDoc;
+	public ContasPagar(Double valor) {
+		id = Instant.now().toString();
+		setStatusCp("A Pagar");
+		setValorConta(valor);
+		setDataPagamento("10/10/2010");
 	}
-
-	public void setIdDoc(Caixa idDoc) {
-		this.idDoc = idDoc;
-	}
-
+	
 	public String getDataPagamento() {
 		return dataPagamento;
 	}
@@ -22,12 +24,12 @@ public class ContasPagar {
 		this.dataPagamento = dataPagamento;
 	}
 
-	public Double getValorPagamento() {
-		return valorPagamento;
+	public Double getValorConta() {
+		return valorConta;
 	}
 
-	public void setValorPagamento(Double valorPagamento) {
-		this.valorPagamento = valorPagamento;
+	public void setValorConta(Double valorPagamento) {
+		this.valorConta = valorPagamento;
 	}
 
 	public String getStatusCp() {
@@ -38,4 +40,10 @@ public class ContasPagar {
 		this.statusCp = statusCp;
 	}
 
+	@Override
+	public String toString() {
+		return "ContasPagar [dataPagamento=" + dataPagamento + ", valorPagamento=" + valorConta + ", statusCp="
+				+ statusCp + "]";
+	}
+	
 }
