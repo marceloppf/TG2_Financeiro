@@ -3,7 +3,7 @@ package imed.edu.br;
 public class Caixa {
 
 	Integer idDoc;
-	Conta idConta;
+	//Conta idConta;
 	Pessoa idPessoa;
 	Integer tipoDoc;
 	String dataDoc;
