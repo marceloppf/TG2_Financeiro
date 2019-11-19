@@ -4,8 +4,8 @@ public class ContasReceber {
     		 Caixa  doc; 
     private String  dtVcto;
     private Integer numParcelaCR;
+    private Double  vlrParcelaCR;    
     private String  dtReceb;
-    private Double  vlrParcelaCR;
     private Double  vlrReceb;
     private Double  vlrJuroReceb;
     private Double  vlrDescReceb;

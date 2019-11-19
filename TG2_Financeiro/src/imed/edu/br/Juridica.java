@@ -2,7 +2,7 @@ package imed.edu.br;
 
 public class Juridica extends Pessoa {
 	private String CNPJ;
-	private String Inscricao;
+	private String IE;
 	private String dtFundacao;
 	Pessoa idPessoa;
 	
@@ -13,10 +13,10 @@ public class Juridica extends Pessoa {
 		CNPJ = cNPJ;
 	}
 	public String getInscricao() {
-		return Inscricao;
+		return IE;
 	}
-	public void setInscricao(String inscricao) {
-		Inscricao = inscricao;
+	public void setInscricao(String ie) {
+		IE = ie;
 	}
 	public String getDtFundacao() {
 		return dtFundacao;

@@ -79,7 +79,7 @@ public class SistemaFinanceiro {
 		
 		System.out.println("---->>>> CONTAS A RECEBER");
 		for (ContasReceber contasReceber : cx1.totalContasReceber) {
-			System.out.println("("+contasReceber.getDoc().getDescContas()+" - "+contasReceber.getDoc().getIdConta() + "): " + 
+			System.out.println("("+contasReceber.getDoc().getDescConta()+" - "+contasReceber.getDoc().getIdConta() + "): " + 
 					           "Cli: "+contasReceber.getDoc().getPessoa().getIdPessoa()+"/"+contasReceber.getDoc().getPessoa().getNome()+ " - " +
 					           "Doc/Vlr: "+contasReceber.getDoc().getIdDoc()+"/"+contasReceber.getDoc().getVlrDoc()+ " - " +
 					           "Par.Nº: "+contasReceber.getNumParcelaCR() + " - " +					
@@ -93,7 +93,7 @@ public class SistemaFinanceiro {
 		
 		System.out.println("---->>>> CONTAS A PAGAR");
 		for (ContasPagar contasPagar : cx2.totalContasPagar) {
-			System.out.println("("+contasPagar.getDoc().getDescContas()+" - "+contasPagar.getDoc().getIdConta() + "): " + 
+			System.out.println("("+contasPagar.getDoc().getDescConta()+" - "+contasPagar.getDoc().getIdConta() + "): " + 
 					           "Forn: "+contasPagar.getDoc().getPessoa().getIdPessoa()+"/"+contasPagar.getDoc().getPessoa().getNome()+ " - " +
 					           "Doc/Vlr: "+contasPagar.getDoc().getIdDoc()+"/"+contasPagar.getDoc().getVlrDoc()+ " - " +
 					           "Parc.Nº: "+contasPagar.getNumParcelaCP() + " - " +					
@@ -108,7 +108,7 @@ public class SistemaFinanceiro {
 		
 		System.out.println("");
 		System.out.println("---->>>> Operação Receber");
-		System.out.println("("+cr1.getDoc().getDescContas()+" - "+cr1.getDoc().getIdConta()+ "): " +
+		System.out.println("("+cr1.getDoc().getDescConta()+" - "+cr1.getDoc().getIdConta()+ "): " +
 				           "Cli: "+cr1.getDoc().getPessoa().getIdPessoa()+ " - " +
 				           "Doc: "+cr1.getDoc().getIdDoc()+ " - " +
 				           "Par.Nº: "+cr1.getNumParcelaCR()+ " - " +
@@ -122,7 +122,7 @@ public class SistemaFinanceiro {
 		
 		System.out.println("");
 		System.out.println("---->>>> Operação Pagar");
-		System.out.println("("+cp1.getDoc().getDescContas()+" - "+cp1.getDoc().getIdConta()+ "): " +
+		System.out.println("("+cp1.getDoc().getDescConta()+" - "+cp1.getDoc().getIdConta()+ "): " +
 				           "Cli: "+cp1.getDoc().getPessoa().getIdPessoa()+ " - " +
 				           "Doc: "+cp1.getDoc().getIdDoc()+ " - " +
 				           "Par.Nº: "+cp1.getNumParcelaCP()+ " - " +

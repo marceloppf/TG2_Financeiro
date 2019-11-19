@@ -2,7 +2,7 @@ package imed.edu.br;
 
 public class PlanoConta {
 	private String  idConta;
-	private String  descContas;
+	private String  descConta;
 	private Integer tpConta;
 	
 	public String getIdConta() {
@@ -19,10 +19,10 @@ public class PlanoConta {
 	public void setTpConta(Integer tpConta) {
 		this.tpConta = tpConta;
 	}
-	public String getDescContas() {
-		return descContas;
+	public String getDescConta() {
+		return descConta;
 	}
-	public void setDescContas(String descContas) {
-		this.descContas = descContas;
+	public void setDescContas(String descConta) {
+		this.descConta = descConta;
 	}
 }
