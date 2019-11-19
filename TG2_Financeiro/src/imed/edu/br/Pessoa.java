@@ -1,64 +1,49 @@
 package imed.edu.br;
 
 public class Pessoa {
-
-	private String nome;
-	private String endereco;
-	private String cidade;
-	private String cep;
+	private Integer idPessoa;
+	private String  Nome;
+	private String  Endereco;
+	private String  Cidade;
+	private String  CEP;
 	private Integer tpPessoa;
-	private Conta conta;
 	
-	public Pessoa() {
-		setConta(new Conta());
+	public Integer getIdPessoa() {
+		return idPessoa;
 	}
-
+	public void setIdPessoa(Integer idPessoa) {
+		this.idPessoa = idPessoa;
+	}
 	public String getNome() {
-		return nome;
+		return Nome;
 	}
-
 	public void setNome(String nome) {
-		this.nome = nome;
+		Nome = nome;
 	}
-
 	public String getEndereco() {
-		return endereco;
+		return Endereco;
 	}
-
 	public void setEndereco(String endereco) {
-		this.endereco = endereco;
+		Endereco = endereco;
 	}
-
 	public String getCidade() {
-		return cidade;
+		return Cidade;
 	}
-
 	public void setCidade(String cidade) {
-		this.cidade = cidade;
+		Cidade = cidade;
 	}
-
-	public String getCep() {
-		return cep;
+	public String getCEP() {
+		return CEP;
 	}
-
-	public void setCep(String cep) {
-		this.cep = cep;
+	public void setCEP(String cEP) {
+		CEP = cEP;
 	}
-
-	public Integer getTpPessoa() {
-		return tpPessoa;
+	public String getTpPessoa() {
+		if (this.tpPessoa == 1) {
+			return "Física";
+		} else { return "Jurídica";}
 	}
-
 	public void setTpPessoa(Integer tpPessoa) {
 		this.tpPessoa = tpPessoa;
 	}
-
-	public Conta getConta() {
-		return conta;
-	}
-
-	public void setConta(Conta conta) {
-		this.conta = conta;
-	}
-
 }

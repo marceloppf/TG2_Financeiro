@@ -1,44 +1,27 @@
 package imed.edu.br;
 
-public class Fisica extends Pessoa {
-
-	private String cpf;
-	private String rg;
-	private String dtNasc;
+public class Fisica extends Pessoa {	
+	private String CPF;
+	private String RG;
+	private String dtNascimento;
+	Pessoa idPessoa;
 	
-	public Fisica() {
-		setNome("Pedro Saraiva");
-		setEndereco("Avenida Brasil 666");
-		setCidade("Passo Fundo");
-		setCep("99010000");
-		setDtNasc("07/07/1990");
-		setRg("98765432112");
-		setCpf("12345678");
-		setTpPessoa(0);
+	public String getCPF() {
+		return CPF;
 	}
-
-	public String getCpf() {
-		return cpf;
+	public void setCPF(String cPF) {
+		CPF = cPF;
 	}
-
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
+	public String getRG() {
+		return RG;
 	}
-
-	public String getRg() {
-		return rg;
+	public void setRG(String rG) {
+		RG = rG;
 	}
-
-	public void setRg(String rg) {
-		this.rg = rg;
+	public String getDtNascimento() {
+		return dtNascimento;
 	}
-
-	public String getDtNasc() {
-		return dtNasc;
-	}
-
-	public void setDtNasc(String dtNasc) {
-		this.dtNasc = dtNasc;
-	}
-
+	public void setDtNascimento(String dtNascimento) {
+		this.dtNascimento = dtNascimento;
+	}	
 }

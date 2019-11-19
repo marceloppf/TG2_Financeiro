@@ -1,48 +1,90 @@
 package imed.edu.br;
 
-import java.time.Instant;
-
-public class ContasPagar {
-	String id;
-	String dataPagamento;
-	Double valorConta;
-	String statusCp;
-
-	public ContasPagar(Double valor) {
-		id = Instant.now().toString();
-		setStatusCp("A Pagar");
-		setValorConta(valor);
-		setDataPagamento("10/10/2010");
+public class ContasPagar{
+	         Caixa  doc;
+	private String  dtVcto;
+	private Integer numParcelaCP;
+	private String  dtPgto;
+	private Double  vlrParcelaCP;
+	private Double  vlrPgto;
+	private Double  vlrJuroPgto;
+	private Double  vlrDescPgto;
+	private Integer stCP;
+	
+    public void CalcPag(String dtPgtoFor, Integer numParcFor, Double vlrParcFor ) {
+    	this.numParcelaCP = numParcFor;
+    	this.dtPgto = dtPgtoFor;
+    	this.vlrJuroPgto = 0d;
+    	this.vlrDescPgto = (vlrParcFor * 0.15);
+    	this.vlrPgto = vlrParcFor - this.vlrDescPgto;
+    	this.stCP = 1;
+    }	
+	
+	public String getDtVcto() {
+		return dtVcto;
+	}
+	public void setDtVcto(String dtVcto) {
+		this.dtVcto = dtVcto;
+	}
+	public Integer getNumParcelaCP() {
+		return numParcelaCP;
+	}
+	public void setNumParcelaCP(Integer numParcelaCP) {
+		this.numParcelaCP = numParcelaCP;
+	}
+	public String getDtPgto() {
+		return dtPgto;
+	}
+	public void setDtPgto(String dtPgto) {
+		this.dtPgto = dtPgto;
+	}
+	public Double getVlrParcelaCP() {
+		return vlrParcelaCP;
+	}
+	public void setVlrParcelaCP(Double vlrTotalCP, Double parcelas) {
+		this.vlrParcelaCP = vlrTotalCP / parcelas;
+	}
+	public Double getVlrPgto() {
+		return vlrPgto;
+	}
+	public void setVlrPgto(Double vlrPgto) {
+		this.vlrPgto = vlrPgto;
 	}
 	
-	public String getDataPagamento() {
-		return dataPagamento;
+	public Double getVlrJuroPgto() {
+		return vlrJuroPgto;
+	}
+	public void setVlrJuroPgto(Double vlrJuroPgto) {
+		this.vlrJuroPgto = vlrJuroPgto;
 	}
 
-	public void setDataPagamento(String dataPagamento) {
-		this.dataPagamento = dataPagamento;
+	public Double getVlrDescPgto() {
+		return vlrDescPgto;
 	}
 
-	public Double getValorConta() {
-		return valorConta;
+	public void setVlrDescPgto(Double vlrDescPgto) {
+		this.vlrDescPgto = vlrDescPgto;
 	}
 
-	public void setValorConta(Double valorPagamento) {
-		this.valorConta = valorPagamento;
+	public String getStCP() {
+		if (this.stCP == 1) {
+			return "PAGO";
+		} else if(this.stCP == 2) {
+			return "PENDENTE";
+		} else { return "ATRASADO";}
 	}
-
-	public String getStatusCp() {
-		return statusCp;
+	public void setStCP(Integer stCP) {
+		this.stCP = stCP;
 	}
-
-	public void setStatusCp(String statusCp) {
-		this.statusCp = statusCp;
+	public Caixa getDoc() {
+		return doc;
 	}
-
-	@Override
-	public String toString() {
-		return "ContasPagar [dataPagamento=" + dataPagamento + ", valorPagamento=" + valorConta + ", statusCp="
-				+ statusCp + "]";
+	public void setDoc(Caixa doc, Integer numParcela) {	
+		this.doc = doc;
+		this.setVlrParcelaCP(doc.getVlrDoc(), doc.getParcela());
+		this.setNumParcelaCP(numParcela);		
+		this.setDtPgto("00/00/0000");		
+		this.setDtVcto(doc.getDtDoc());		
+		this.setStCP(doc.getStDoc());		
 	}
-	
 }
