@@ -50,15 +50,12 @@ public class ContasPagar {
 	}
 
 	public void setVlrParcelaCP(Double vlrTotalCP, Double parcelas) {
-	    try
-	    {
-	    	this.vlrParcelaCP = vlrTotalCP / parcelas;
-	    }
-		catch (NullPointerException e)
-		{
+		try {
+			this.vlrParcelaCP = vlrTotalCP / parcelas;
+		} catch (NullPointerException e) {
 			System.out.println("Valor da Parcela não Calculado !!!");
-		} 
-		
+		}
+
 	}
 
 	public Double getVlrPgto() {
