@@ -1,6 +1,7 @@
 package imed.edu.br;
 
 public class ContasPagar{
+	
 	         Caixa  doc;
 	private String  dtVcto;
 	private Integer numParcelaCP;

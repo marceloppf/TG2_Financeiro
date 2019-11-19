@@ -117,7 +117,6 @@ public class SistemaFinanceiro {
 				           "Dt.Receb: "+cr1.getDtReceb()+ " - " +
 				           "Vlr.Receb: "+cr1.getVlrReceb()+ " - " +
 				           "Vlr.Juro: "+cr1.getVlrJuroReceb()+ " - " +				           
-				           //"Vlr.Desc: "+cr1.getVlrDescReceb()+ " - " +
 		                   "Status: "+cr1.getStCR());	
 		
 		System.out.println("");
@@ -128,9 +127,8 @@ public class SistemaFinanceiro {
 				           "Par.Nº: "+cp1.getNumParcelaCP()+ " - " +
 				           "Vlr.Parc: "+cp1.getVlrParcelaCP()+ " - " +
 				           "Dt.Vcto: "+cp1.getDtVcto()+ " - " +				
-				           "Dt.Receb: "+cp1.getDtPgto()+ " - " +
-				           "Vlr.Receb: "+cp1.getVlrPgto()+ " - " +
-				           //"Vlr.Juro: "+cp1.getVlrJuroPgto()+ " - " +				           
+				           "Dt.Pgto: "+cp1.getDtPgto()+ " - " +
+				           "Vlr.Pgto: "+cp1.getVlrPgto()+ " - " +		           
 				           "Vlr.Desc: "+cp1.getVlrDescPgto()+ " - " +
 		                   "Status: "+cp1.getStCP());		
 	}

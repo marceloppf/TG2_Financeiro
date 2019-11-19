@@ -20,7 +20,6 @@ public class Caixa extends PlanoConta{
 	public void setTotalContas(List<ContasReceber> totalContas) {
 		this.totalContasReceber = totalContas;
 	}
-
 	public List<ContasPagar> getTotalContasPagar() {
 		return totalContasPagar;
 	}

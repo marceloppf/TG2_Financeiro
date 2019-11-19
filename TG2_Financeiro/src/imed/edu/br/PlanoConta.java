@@ -1,6 +1,7 @@
 package imed.edu.br;
 
 public class PlanoConta {
+	
 	private String  idConta;
 	private String  descConta;
 	private Integer tpConta;

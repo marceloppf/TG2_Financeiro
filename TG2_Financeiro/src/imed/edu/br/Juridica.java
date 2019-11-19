@@ -1,6 +1,7 @@
 package imed.edu.br;
 
 public class Juridica extends Pessoa {
+	
 	private String CNPJ;
 	private String IE;
 	private String dtFundacao;
