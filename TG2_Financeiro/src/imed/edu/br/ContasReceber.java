@@ -50,7 +50,11 @@ public class ContasReceber {
 	}
 
 	public void setVlrParcelaCR(Double vlrTotalCR, Double parcelas) {
-		this.vlrParcelaCR = vlrTotalCR / parcelas;
+		try {
+			this.vlrParcelaCR = vlrTotalCR / parcelas;
+		} catch (NullPointerException e) {
+			System.out.println("Valor da Parcela não Calculado !!!");
+		}
 	}
 
 	public Double getVlrReceb() {
