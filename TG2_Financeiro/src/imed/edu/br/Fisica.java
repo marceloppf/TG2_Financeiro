@@ -1,7 +1,7 @@
 package imed.edu.br;
 
 public class Fisica extends Pessoa {
-	
+
 	private String CPF;
 	private String RG;
 	private String dtNascimento;

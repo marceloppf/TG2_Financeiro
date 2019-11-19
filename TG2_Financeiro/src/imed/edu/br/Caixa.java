@@ -3,7 +3,7 @@ package imed.edu.br;
 import java.util.*;
 
 public class Caixa extends PlanoConta{
-
+	
 	Pessoa pessoa;	
 	private Integer idDoc;	
 	private Integer tpDoc; //1=CP 2=CR
